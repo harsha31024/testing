@@ -1,0 +1,265 @@
+<section id="services" class="services section-bg">
+    <div class="container-fluid" *ngFor="let single of productInfo">
+      <!-- <div class="col-sm-12 text-center mb-4">
+        <a class="btn btn-primary" target="_blank" href="http://paypal.me/skd1996"> Donate Now <i class="fa fa-dollar"></i></a>
+      </div> -->
+       <div class="row row-sm">
+          <div class="col-md-6 _boxzoom">
+             <!-- <div class="zoom-thumb">
+                <ul class="piclist">
+                   <li><img src="https://s.fotorama.io/1.jpg" alt=""></li>
+                   <li><img src="https://s.fotorama.io/2.jpg" alt=""></li>
+                   <li><img src="https://s.fotorama.io/3.jpg" alt=""></li>
+                   <li><img src="https://ucarecdn.com/382a5139-6712-4418-b25e-cc8ba69ab07f/-/stretch/off/-/resize/760x/" alt=""></li>
+                </ul>
+             </div> -->
+             <div class="_product-images">
+                <!-- <div class="picZoomer">
+                   <img class="my_img" src="{{single.image}}" alt="">
+                </div> -->
+                <div class="image-box">
+                    <img src="{{single.image}}" height="850px" width="100%">
+                    <!-- <ngx-img-zoom
+  [zoomImageSrc]="zoomImageSrc"
+  [previewImageSrc]="previewImageSrc"
+  [imgStyle]="'width:515px; height:515px; bottom:0;  left:0;  right:0;  top:0;  margin:0 auto; border:1px solid #dcdcdc;'"
+  [resultStyle]="'width:824px; height:824px; background-repeat: no-repeat; z-index: 2; position:absolute;-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); top: 0;left: 100%;'"
+  [lensStyle]="'width:55px; height:55px;'"
+  [enableZoom]="enableZoom"
+  [containerStyle]=""
+></ngx-img-zoom> -->
+                   
+                </div>
+             </div>
+          </div>
+          <div class="col-md-6">
+             <div class="_product-detail-content">
+                <h2 class="_p-name"> {{single.title}} </h2>
+                <div class="_p-price-box">
+                   <div class="p-list">
+                      <span><h3>Price:</h3></span>
+                      <span class="price"> {{single.price}} </span>
+                      <span><h3>Rating:</h3>{{single.rating.rate}}</span>
+                      <span><h3>Views:</h3>{{single.rating.count}}</span>
+                   </div>
+                   <!-- <div class="_p-add-cart">
+                      <div class="_p-qty">
+                         <span>Add Quantity</span>
+                         <div class="value-button decrease_" id="" value="Decrease Value">-</div>
+                         <input type="number" name="qty" id="number" value="1" />
+                         <div class="value-button increase_" id="" value="Increase Value">+</div>
+                      </div>
+                   </div> -->
+                   <div class="_p-features">
+                      <span> Description About this product:- </span>
+                        {{single.description}}       
+                   </div>
+                   <form action="" method="post" accept-charset="utf-8">
+                      <ul class="spe_ul"></ul>
+                      <div class="_p-qty-and-cart">
+                         <div class="_p-add-cart">
+                            <!-- <button class="btn-theme btn buy-btn" tabindex="0">
+                            <i class="fa fa-shopping-cart"></i> Buy Now
+                            </button>
+                            <button class="btn-theme btn btn-success" tabindex="0">
+                            <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button> -->
+                            <button class="btn-theme btn btn-primary" tabindex="0">
+                                <i class="fa fa-backward"> <a href ="/products">Back</a></i>
+                                </button>
+                            <!-- <input type="hidden" name="pid" value="18" />
+                            <input type="hidden" name="price" value="850" />
+                            <input type="hidden" name="url" value="" />     -->
+                         </div>
+                      </div>
+                   </form>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <!-- <section class="sec bg-light">
+    <div class="container">
+       <div class="row">
+          <div class="col-sm-12 title_bx">
+             <h3 class="title"> Recent Post   </h3>
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-md-12 list-slider mt-4">
+             <div class="owl-carousel common_wd  owl-theme" id="recent_post">
+                <div class="item">
+                   <div class="sq_box shadow">
+                      <div class="pdis_img"> 
+                         <span class="wishlist">
+                         <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                         </span>
+                         <a href="#">
+                         <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                         </a>
+                      </div>
+                      <h4 class="mb-1"> <a href="details.php"> Milton Bottle </a> </h4>
+                      <div class="price-box mb-2">
+                         <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                         <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+                      </div>
+                      <div class="btn-box text-center">
+                         <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                      </div>
+                   </div>
+                </div>
+                <div class="item">
+                   <div class="sq_box shadow">
+                      <div class="pdis_img"> 
+                         <span class="wishlist">
+                         <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                         </span>
+                         <a href="#">
+                         <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                         </a>
+                      </div>
+                      <h4 class="mb-1"> <a href="details.php"> Milton Bottle </a> </h4>
+                      <div class="price-box mb-2">
+                         <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                         <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+                      </div>
+                      <div class="btn-box text-center">
+                         <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                      </div>
+                   </div>
+                </div>
+                <div class="item">
+                   <div class="sq_box shadow">
+                      <div class="pdis_img"> 
+                         <span class="wishlist">
+                         <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                         </span>
+                         <a href="#">
+                         <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                         </a>
+                      </div>
+                      <h4 class="mb-1"> <a href="#"> Milton Bottle </a> </h4>
+                      <div class="price-box mb-2">
+                         <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                         <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+                      </div>
+                      <div class="btn-box text-center">
+                         <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                      </div>
+                   </div>
+                </div>
+                <div class="item">
+                   <div class="sq_box shadow">
+                      <div class="pdis_img"> 
+                         <span class="wishlist">
+                         <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                         </span>
+                         <a href="#">
+                         <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                         </a>
+                      </div>
+                      <h4 class="mb-1"> <a href="#"> Milton Bottle </a> </h4>
+                      <div class="price-box mb-2">
+                         <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                         <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+                      </div>
+                      <div class="btn-box text-center">
+                         <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                      </div>
+                   </div>
+                </div>
+                <div class="item">
+                   <div class="sq_box shadow">
+                      <div class="pdis_img"> 
+                         <span class="wishlist">
+                         <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                         </span>
+                         <a href="#">
+                         <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                         </a>
+                      </div>
+                      <h4 class="mb-1"> <a href="details.php"> Milton Bottle </a> </h4>
+                      <div class="price-box mb-2">
+                         <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                         <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+                      </div>
+                      <div class="btn-box text-center">
+                         <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                      </div>
+                   </div>
+                </div>
+                <div class="item">
+                   <div class="sq_box shadow">
+                      <div class="pdis_img"> 
+                         <span class="wishlist">
+                         <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                         </span>
+                         <a href="#">
+                         <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                         </a>
+                      </div>
+                      <h4 class="mb-1"> <a href="details.php"> Milton Bottle </a> </h4>
+                      <div class="price-box mb-2">
+                         <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                         <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+                      </div>
+                      <div class="btn-box text-center">
+                         <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                      </div>
+                   </div>
+                </div>
+                <div class="item">
+                   <div class="sq_box shadow">
+                      <div class="pdis_img"> 
+                         <span class="wishlist">
+                         <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                         </span>
+                         <a href="#">
+                         <img src="https://ucarecdn.com/05f649bf-b70b-4cf8-90f7-2588ce404a08/-/resize/680x/"> 
+                         </a>
+                      </div>
+                      <h4 class="mb-1"> <a href="details.php"> Milton Bottle </a> </h4>
+                      <div class="price-box mb-2">
+                         <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                         <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+                      </div>
+                      <div class="btn-box text-center">
+                         <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section> -->
+
+
+ <!--footer  -->
+
+ <footer class="footer">
+
+   <div class="inner-footer">
+     <div class="social-links">
+       <ul>
+         <li class="social-items"><a href="#"><i class="fab fa-facebook"></i></a></li>
+         <li class="social-items"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+         <li class="social-items"><a href="#"><i class="fab fa-instagram"></i></a></li>
+         <li class="social-items"><a href="#"><i class="fab fa-tumblr-square"></i></a></li>
+       </ul>
+     </div>
+     <div class="quick-links">
+       <ul>
+         <li class="quick-items"><a href="#">Home</a></li>
+         <li class="quick-items"><a href="#">Services</a></li>
+         <li class="quick-items"><a href="#">Careers</a></li>
+         <li class="quick-items"><a href="#">About Us</a></li>
+         <li class="quick-items"><a href="#">Contact Us</a></li>
+       </ul>
+     </div>
+   </div>
+   <div class="outer-footer">
+     Copyright &copy; Shopping Cart. All Rights Reserved
+   </div>
+</footer>
