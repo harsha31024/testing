@@ -16,6 +16,7 @@ import { ViewproductsByCategoryComponent } from './viewproducts-by-category/view
 import { DropdownComponent } from './dropdown/dropdown.component';
 
 import { ImgMagnifier } from "ng-img-magnifier";
+import { GitComponent } from './git/git.component';
 
 
 
@@ -26,7 +27,8 @@ import { ImgMagnifier } from "ng-img-magnifier";
     ViewAllProductsComponent,
     SingleProductComponent,
     ViewproductsByCategoryComponent,
-    DropdownComponent
+    DropdownComponent,
+    GitComponent
   ],
   imports: [
     BrowserModule,
