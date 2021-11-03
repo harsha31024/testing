@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ShoppingService} from '../shopping.service';
 import { environment } from 'src/environments/environment';
-// import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-view-all-products',
@@ -14,8 +13,7 @@ export class ViewAllProductsComponent implements OnInit {
   productData:any = [];
   categories:any=[0];
 
-  // categoryId:any=[];
-  // categoryInfo:any=[];
+
 
   titleSearch:any;
 
@@ -27,7 +25,6 @@ export class ViewAllProductsComponent implements OnInit {
   ngOnInit(): void {
     console.log('jjj');
     this.getProductData();
-    // this.getCatProduct();
     this.getCategorylist();
   }
   LogoutUser(){
